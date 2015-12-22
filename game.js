@@ -164,8 +164,10 @@ function Game(rocket, safeVelocity, crashVelocity) {
   this.tooFast = crashVelocity;
 
 // Message if lander crashes
-  this.crashedMessage = "Crashed and Burned Sucker!\n";
-  this.explodedMessage = "Blasted to Smithereens!\n";
+  // this.crashedMessage = "Crashed and Burned Sucker!\n";
+  this.crashedMessage = "You done messed up, bro\n"
+  // this.explodedMessage = "Blasted to Smithereens!\n";
+  this.explodedMessage = "Dat was dupid.  Dop it.\n"
   this.landedMessage = "Landed Safely! One small step for man, one giant leap for mankind\n";
 
 // Safe landing velocity must be between 0 and this number
@@ -218,11 +220,11 @@ function noburn() {
 function toggleBurn() {
     if (burning == false) {
         burn();
-        document.getElementById("engine").innerHTML = "Burn";
+        document.getElementById("engine").innerHTML = "No burn";
     }
     else {
         noburn();
-        document.getElementById("engine").innerHTML = "No burn";
+        document.getElementById("engine").innerHTML = "Burn";
     }
 }
 
