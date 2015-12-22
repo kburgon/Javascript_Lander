@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+    <title>
+        Rocket Game
+    </title>
+</head>
+    <body ng-app="RocketGame" layout="column">
+        <div ng-controller="GameController">
+            <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+              <md-list>
+
+                <!-- List item #1 -->
+                <md-item >
+                    <md-button>
+                      <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
+                      Lia Luogo
+                    </md-button>
+                </md-item>
+
+                <!-- List item #2 -->
+                <md-item >
+                    <md-button>
+                     <md-icon md-svg-src="./assets/svg/avatar-4.svg" class="avatar"></md-icon>
+                      Lawrence Ray
+                    </md-button>
+                </md-item>
+
+              </md-list>
+            </md-sidenav>
+
+            <md-content flex id="content">
+              <!-- User details sample -->
+
+              <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
+              <h2>Lia Luogo</h2>
+              <p>
+                I love cheese...
+              </p>
+            </md-content>
+        </div>
+
+        <script src="/node_modules/angular/angular.js"></script>
+        <script src="/node_modules/angular-aria/angular-aria.js"></script>
+        <script src="/node_modules/angular-animate/angular-animate.js"></script>
+        <script src="/node_modules/angular-material/angular-material.js"></script>
+        <script>
+
+            // Include app dependency on ngMaterial
+
+            angular.module( 'YourApp', [ 'ngMaterial' ] )
+                .controller("YourController", YourController );
+
+        </script>
+    </body>
+</html>
