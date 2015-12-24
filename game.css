@@ -17,3 +17,7 @@ div#RocketText {
 div#RocketGame {
     margin-left: 20%;
 }
+
+button#engine {
+    width: 300px;
+}
