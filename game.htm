@@ -8,22 +8,23 @@
 		<div id="gameTitle">
 			<center><h1>Rocket Game</h1></center>
 		</div>
-		<div id="RocketText">
-			<button onclick="gameStart(true)">Start Game</button>
-			<br/>
-			<br/>
-			<button id="engine" onclick="toggleBurn()">Burn</button>
-
-			<!--<button onclick="noburn()">No Burn</button>-->
-			<br/>
-			<canvas id="textCanvas" width="200" height="400">
-				This text is displayed if your browser does not support HTML5 Canvas.
-			</Canvas>
-		</div></left>
-		<right><div id="RocketGame">
-			<canvas id="gameCanvas" width="300" height="300">
-		  		This text is displayed if your browser does not support HTML5 Canvas.
-			</canvas>
-		</div></right>
+		<section id="game">
+			<div id="RocketText">
+				<button onclick="gameStart(true)">Start Game</button>
+				<br/>
+				<br/>
+				<button id="engine" onclick="toggleBurn()">Burn</button>
+				<!--<button onclick="noburn()">No Burn</button>-->
+				<br/>
+				<canvas id="textCanvas" width="200" height="400">
+					This text is displayed if your browser does not support HTML5 Canvas.
+				</Canvas>
+			</div></left>
+			<right><div id="RocketGame">
+				<canvas id="gameCanvas" width="300" height="300">
+			  		This text is displayed if your browser does not support HTML5 Canvas.
+				</canvas>
+			</div></right>
+		</section>
 	</body>
 </html>

@@ -5,3 +5,15 @@ body {
 button {
     background-color: #FF0000;
 }
+
+div#gameTitle {
+    background-color: #FF5511;
+}
+
+div#RocketText {
+    float:left;
+}
+
+div#RocketGame {
+    margin-left: 20%;
+}
